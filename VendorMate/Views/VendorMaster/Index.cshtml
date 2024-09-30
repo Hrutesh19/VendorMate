@@ -1,0 +1,51 @@
+﻿@model IEnumerable<VendorMaster>
+
+
+@{
+    ViewData["Title"] = "Vendor Master";
+}
+
+<h2>Vendor Master</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Create New</a>
+</p>
+<head>
+    <link rel="stylesheet" href="~/css/vendortable.css" />
+</head>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Code</th>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Contact Email</th>
+            <th>Contact No</th>
+            <th>Valid Till</th>
+            <th>Is Active</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ID</td>
+                <td>@item.Code</td>
+                <td>@item.Name</td>
+                <td>@item.AddressLine1, @item.AddressLine2</td>
+                <td>@item.ContactEmail</td>
+                <td>@item.ContactNo</td>
+                <td>@item.ValidTillDate.ToShortDateString()</td>
+                <td>@item.IsActive</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.ID" class="btn btn-warning">Edit</a> |
+                    <a asp-action="Delete" asp-route-id="@item.ID" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

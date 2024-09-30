@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - VendorMate</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/nav.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <div class="d-flex align-items-center justify-content-between p-3">
+            <a href="/Home" class="ml-3 no-link-style">
+                <h1 class="ml-3">VendorMate</h1>
+            </a>
+            <!-- Optional: Brand Name as a Heading -->
+        </div>
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="VendorMaster" asp-action="Index">Vendor Master</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="MaterialMaster" asp-action="Index">Material Master</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="PurchaseOrderHeader" asp-action="Index">Purchase Orders Header</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="PurchaseOrderDetails" asp-action="Index">Purchase Orders Details</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; 2024 - VendorMate</p>
+        </footer>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js" asp-append-version="true"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js" asp-append-version="true"></script>
+</body>
+</html>

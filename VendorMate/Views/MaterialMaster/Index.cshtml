@@ -1,0 +1,46 @@
+﻿@model IEnumerable<VendorMate.Models.MaterialMaster>
+
+@{
+    ViewData["Title"] = "Material Master List";
+}
+
+<h1>Material Master List</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Create New</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Code</th>
+            <th>Short Text</th>
+            <th>Long Text</th>
+            <th>Unit</th>
+            <th>Reorder Level</th>
+            <th>Min Order Quantity</th>
+            <th>Is Active</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ID</td>
+                <td>@item.Code</td>
+                <td>@item.ShortText</td>
+                <td>@item.LongText</td>
+                <td>@item.Unit</td>
+                <td>@item.ReorderLevel</td>
+                <td>@item.MinOrderQuantity</td>
+                <td>@item.IsActive</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.ID" class="btn btn-warning">Edit</a>
+                    <a asp-action="Delete" asp-route-id="@item.ID" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

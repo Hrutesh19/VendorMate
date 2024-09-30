@@ -1,0 +1,58 @@
+/* nav.css */
+
+/* Customizing Navbar */
+.navbar {
+    background-color: #ffffff; /* White background */
+    border-bottom: 0px solid #ccc; /* Light gray border */
+    padding: 0;
+}
+
+.navbar-brand {
+    font-size: 1.8rem; /* Slightly larger font size for the brand */
+    font-weight: bold;
+    color: black !important; /* Brand name in black */
+    letter-spacing: 1px;
+}
+
+.navbar-toggler {
+    border: none; /* No border for the toggler */
+}
+
+.navbar-nav {
+    margin-left: auto; /* Pushes nav links to the right */
+}
+
+    .navbar-nav .nav-link {
+        font-size: 1.1rem;
+        color: black !important; /* Black text for navbar links */
+        padding: 0.5rem 1rem;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+        .navbar-nav .nav-link:hover {
+            background-color: #f0f0f0; /* Light gray on hover */
+            color: black !important; /* Ensure link color remains black */
+        }
+
+/* Responsive collapse menu background */
+.navbar-collapse {
+    background-color: #ffffff; /* Match the navbar background */
+}
+
+.nav-item.active .nav-link {
+    background-color: #e0e0e0; /* Light gray for active page */
+    color: black !important; /* Ensure active link remains black */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f8f9fa; /* Light background for footer */
+    border-top: 1px solid #ddd; /* Light border on top */
+    margin-top: 23%; /* Push footer to the bottom */
+}
+.no-link-style {
+    text-decoration: none;
+    color: inherit; /* Keeps the color the same as the parent or default text */
+}

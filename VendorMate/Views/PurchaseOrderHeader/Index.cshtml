@@ -1,0 +1,45 @@
+﻿@model IEnumerable<PurchaseOrderHeader>
+
+@{
+    ViewData["Title"] = "Purchase Order Header";
+}
+
+<h2>Purchase Order Header</h2>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Create New</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Order Number</th>
+            <th>Order Date</th>
+            <th>Vendor ID</th>
+            <th>Notes</th>
+            <th>Order Value</th>
+            <th>Order Status</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+
+        {
+            <tr>
+                <td>@item.ID</td>
+                <td>@item.OrderNumber</td>
+                <td>@item.OrderDate.ToShortDateString()</td>
+                <td>@item.VendorID</td>
+                <td>@item.Notes</td>
+                <td>@item.OrderValue</td>
+                <td>@item.OrderStatus</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.ID" class="btn btn-warning">Edit</a> |
+                    <a asp-action="Delete" asp-route-id="@item.ID" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

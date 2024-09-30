@@ -1,0 +1,60 @@
+﻿@model VendorMaster
+
+@{
+    ViewData["Title"] = "Create Vendor";
+}
+<head>
+    <link rel="stylesheet" href="~/css/Vendorcreate.css" />
+</head>
+
+<h2>Create Vendor</h2>
+
+<form asp-action="Create">
+    <div class="form-group">
+        <label asp-for="Code" class="control-label"></label>
+        <input asp-for="Code" class="form-control" />
+        <span asp-validation-for="Code" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Name" class="control-label"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="AddressLine1" class="control-label"></label>
+        <input asp-for="AddressLine1" class="form-control" />
+        <span asp-validation-for="AddressLine1" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="AddressLine2" class="control-label"></label>
+        <input asp-for="AddressLine2" class="form-control" />
+        <span asp-validation-for="AddressLine2" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="ContactEmail" class="control-label"></label>
+        <input asp-for="ContactEmail" class="form-control" />
+        <span asp-validation-for="ContactEmail" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="ContactNo" class="control-label"></label>
+        <input asp-for="ContactNo" class="form-control" />
+        <span asp-validation-for="ContactNo" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="ValidTillDate" class="control-label"></label>
+        <input asp-for="ValidTillDate" type="date" class="form-control" />
+        <span asp-validation-for="ValidTillDate" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="IsActive" class="control-label"></label>
+        <input asp-for="IsActive" type="checkbox" class="form-check-input" />
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Create" class="btn btn-primary" />
+    </div>
+</form>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

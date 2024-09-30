@@ -1,0 +1,62 @@
+﻿/* General Styles */
+h1, h4 {
+    color: #444; /* Slightly lighter color for headings */
+}
+
+h1 {
+    font-size: 26px; /* Font size for main headings */
+}
+
+h4 {
+    font-size: 18px; /* Font size for subheadings */
+}
+
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 15px; /* Space between form groups */
+}
+
+/* Label Styles */
+label {
+    font-weight: bold; /* Make labels bold */
+    margin-bottom: 5px; /* Space between label and input */
+}
+
+/* Input and Textarea Styles */
+input.form-control,
+select.form-control {
+    width: 70%; /* Set input fields width to 70% */
+    border: 1px solid #ced4da; /* Light border for input fields */
+    border-radius: 4px; /* Slightly rounded corners */
+    padding: 10px; /* Add padding for input fields */
+}
+
+    /* Focus Styles */
+    input.form-control:focus,
+    select.form-control:focus {
+        border-color: #28a745; /* Change border color on focus */
+    }
+
+/* Validation Message Styles */
+span.text-danger {
+    font-size: 0.875em; /* Slightly smaller font for validation messages */
+    color: #dc3545; /* Bootstrap danger color */
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #28a745; /* Green for primary button */
+    border-color: #28a745; /* Match border to button color */
+    color: white; /* White text on primary buttons */
+}
+
+    .btn-primary:hover {
+        background-color: #218838; /* Darker green on hover */
+        border-color: #1e7e34; /* Darker border on hover */
+    }
+
+/* Back Link Styles */
+div a {
+    color: #28a745; /* Link color */
+    font-weight: bold; /* Bold link text */
+}

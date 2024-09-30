@@ -1,0 +1,75 @@
+﻿@model VendorMate.Models.PurchaseOrderDetails
+
+@{
+    ViewData["Title"] = "Create Purchase Order Detail";
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/Purchaseorderdetailscreate.css" />
+</head>
+
+<h1>@ViewData["Title"]</h1>
+
+<h4>Purchase Order Details</h4>
+
+<hr />
+<div>
+    <form asp-action="Create">
+        <div class="form-group">
+            <label asp-for="OrderID" class="control-label"></label>
+            <input asp-for="OrderID" class="form-control" />
+            <span asp-validation-for="OrderID" class="text-danger"></span>
+            <small>Refer to <a asp-action="Index" asp-controller="PurchaseOrderHeader">Purchase Orders</a> for Order IDs.</small>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="MaterialID" class="control-label"></label>
+            <select asp-for="MaterialID" class="form-control" asp-items="ViewBag.Materials"></select>
+            <span asp-validation-for="MaterialID" class="text-danger"></span>
+            <small>Select a Material from the list. See <a asp-action="Index" asp-controller="MaterialMaster">Material Master</a> for details.</small>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="ItemQuantity" class="control-label"></label>
+            <input asp-for="ItemQuantity" class="form-control" />
+            <span asp-validation-for="ItemQuantity" class="text-danger"></span>
+            <small>Check the quantity in the <a asp-action="Index" asp-controller="MaterialMaster">Material Master</a>.</small>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="ItemRate" class="control-label"></label>
+            <input asp-for="ItemRate" class="form-control" />
+            <span asp-validation-for="ItemRate" class="text-danger"></span>
+            <small>Refer to the current rates in the <a asp-action="Index" asp-controller="PurchaseOrderDetails">Purchase Order Details</a>.</small>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="ItemValue" class="control-label"></label>
+            <input asp-for="ItemValue" class="form-control" disabled />
+            <span asp-validation-for="ItemValue" class="text-danger"></span>
+            <small>Calculated as Item Quantity * Item Rate.</small>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="ItemNotes" class="control-label"></label>
+            <textarea asp-for="ItemNotes" class="form-control"></textarea>
+            <span asp-validation-for="ItemNotes" class="text-danger"></span>
+            <small>Add any relevant notes for reference.</small>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="ExpectedDate" class="control-label"></label>
+            <input asp-for="ExpectedDate" class="form-control" type="date" />
+            <span asp-validation-for="ExpectedDate" class="text-danger"></span>
+            <small>Check expected dates from the <a asp-action="Index" asp-controller="PurchaseOrderDetails">Purchase Order Details</a>.</small>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Create" class="btn btn-primary" />
+        </div>
+    </form>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

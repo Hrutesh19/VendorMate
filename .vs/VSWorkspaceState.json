@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\VendorMate",
+    "\\VendorMate\\bin",
+    "\\VendorMate\\Views",
+    "\\VendorMate\\Views\\Home",
+    "\\VendorMate\\Views\\MaterialMaster",
+    "\\VendorMate\\Views\\PurchaseOrderDetails",
+    "\\VendorMate\\wwwroot",
+    "\\VendorMate\\wwwroot\\css"
+  ],
+  "SelectedNode": "\\VendorMate\\wwwroot\\css\\site.css",
+  "PreviewInSolutionExplorer": false
+}

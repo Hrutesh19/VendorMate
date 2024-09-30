@@ -1,0 +1,46 @@
+﻿/* General Styles */
+h2 {
+    color: #333; /* Dark color for headings */
+}
+
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 15px; /* Space between form groups */
+}
+
+/* Label Styles */
+label {
+    font-weight: bold; /* Make labels bold */
+    margin-bottom: 5px; /* Space between label and input */
+}
+
+/* Input Styles */
+input.form-control {
+    width: 80%; /* Set input fields width to 80% */
+    border: 1px solid #ced4da; /* Light border for input fields */
+    border-radius: 4px; /* Slightly rounded corners */
+    padding: 10px; /* Add padding for input fields */
+}
+
+    /* Focus Styles */
+    input.form-control:focus {
+        border-color: #17a2b8; /* Change border color on focus */
+    }
+
+/* Button Styles */
+.btn-primary {
+    background-color: #17a2b8; /* Cyan for primary button */
+    border-color: #17a2b8; /* Match border to button color */
+    color: white; /* White text on primary buttons */
+}
+
+    .btn-primary:hover {
+        background-color: #138496; /* Darker cyan on hover */
+        border-color: #117a8b; /* Darker border on hover */
+    }
+
+/* Back Link Styles */
+div a {
+    color: #17a2b8; /* Link color */
+    font-weight: bold; /* Bold link text */
+}

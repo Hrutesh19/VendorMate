@@ -1,0 +1,47 @@
+﻿@model IEnumerable<VendorMate.Models.PurchaseOrderDetails>
+
+@{
+    ViewData["Title"] = "Purchase Order Details";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Create New</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Order ID</th>
+            <th>Material ID</th>
+            <th>Item Quantity</th>
+            <th>Item Rate</th>
+            <th>Item Value</th>
+            <th>Item Notes</th>
+            <th>Expected Date</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.ID</td>
+                <td>@item.OrderID</td>
+                <td>@item.MaterialID</td>
+                <td>@item.ItemQuantity</td>
+                <td>@item.ItemRate.ToString("C")</td>
+                <td>@item.ItemValue.ToString("C")</td>
+                <td>@item.ItemNotes</td>
+                <td>@item.ExpectedDate.ToShortDateString()</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.ID" class="btn btn-warning">Edit</a>
+                    <a asp-action="Delete" asp-route-id="@item.ID" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

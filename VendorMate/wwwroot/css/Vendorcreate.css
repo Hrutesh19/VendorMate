@@ -1,0 +1,51 @@
+/* General Styles */
+h2 {
+    color: #555; /* Darker gray for headings */
+}
+
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 15px; /* Space between form groups */
+}
+
+/* Label Styles */
+label {
+    font-weight: bold; /* Make labels bold */
+    margin-bottom: 5px; /* Space between label and input */
+}
+
+/* Input Styles */
+input.form-control {
+    width: 75%; /* Set input fields width to 75% */
+    border: 1px solid #ced4da; /* Light border for input fields */
+    border-radius: 4px; /* Slightly rounded corners */
+    padding: 10px; /* Add padding for input fields */
+}
+
+    /* Focus Styles */
+    input.form-control:focus {
+        border-color: #dc3545; /* Change border color on focus */
+    }
+
+/* Checkbox Styles */
+input[type="checkbox"] {
+    margin-top: 10px; /* Space above the checkbox */
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #dc3545; /* Red for primary button */
+    border-color: #dc3545; /* Match border to button color */
+    color: white; /* White text on primary buttons */
+}
+
+    .btn-primary:hover {
+        background-color: #c82333; /* Darker red on hover */
+        border-color: #bd2130; /* Darker border on hover */
+    }
+
+/* Back Link Styles */
+div a {
+    color: #dc3545; /* Link color */
+    font-weight: bold; /* Bold link text */
+}
