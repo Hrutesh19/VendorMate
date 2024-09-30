@@ -8,7 +8,6 @@
 - *Material Entry:* Manage materials with associated details like reorder levels and minimum order quantities.
 - *Purchase Order Management:* Create and manage purchase order headers and their respective itemized details.
 - *CRUD Operations:* Full implementation of Create, Read, Update, and Delete operations for all entities.
-- *Validation:* Basic validation for fields such as email format, order value, reorder level, and more.
 - *User-friendly UI:* Razor views for easy interaction with the system.
 
 ## Technologies Used
