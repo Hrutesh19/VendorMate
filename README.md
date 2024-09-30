@@ -15,5 +15,4 @@
 - *C#*
 
 
-## Project Structure
-The project is structured as follows:
+
