@@ -10,11 +10,13 @@
 - *CRUD Operations:* Full implementation of Create, Read, Update, and Delete operations for all entities.
 - *User-friendly UI:* Razor views for easy interaction with the system.
 
-## Technologies Used
-- *.NET Core (MVC Framework)*
-- *C#*
- 
+## Technologies Used 
 
+- *Backend: ASP.NET MVC (C#)*
+
+- *Frontend: HTML, CSS*
+
+- *Database: MySQL*
 
 ![Project SS1](https://github.com/user-attachments/assets/65b38c77-ed3f-4f7c-9ee8-417627dd7ac3)
 
