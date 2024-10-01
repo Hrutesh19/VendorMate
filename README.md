@@ -12,7 +12,7 @@
 
 ## Technologies Used 
 
-- *Backend: ASP.NET MVC (C#)*
+- *Backend: .NET MVC (C#)*
 
 - *Frontend: HTML, CSS*
 
