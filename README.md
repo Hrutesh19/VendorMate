@@ -1,4 +1,5 @@
 # VendorMate
+![Visitor Count](https://visitor-badge.laobi.icu/badge?page_id=hrutesh19.VendorMate)
 
 ## Overview
 *VendorMate* is a procurement management system built using .NET and C#. This project facilitates managing vendor information, materials, purchase orders, and their respective details. It includes CRUD operations, validation, and a well-structured design to simplify the procurement process.
